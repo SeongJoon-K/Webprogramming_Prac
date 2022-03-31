@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div { 
+            width: 100px;
+            height: 100px;
+        }
+        div:hover {
+            position: absolute;
+            right: 50px;
+            bottom: 50px;
+            background:green;
+        }
+        #de,#re,#ab,#fi,#fl {
+            display: inline-block;
+            width: 70px;
+            height: 70px;
+            background-color: green;
+        }
+        #de {
+            position: static;
+            background-color: aqua;
+        }
+        #re {
+            /* position: relative; */
+            background-color: red;
+
+        }
+        #ab {
+            background-color: olive;
+        }
+        #fi {
+            position: fixed;
+            background-color: yellow;
+            right: 50px;
+           
+        }
+
+    </style>
+</head>
+<body>
+    <h3>POTISION</h3>
+
+    <hr>
+    <div id="de">디폴트 박스</div>
+    <div id="re">릴러티브 박스</div>
+    <div id="ab">앱솔루트 박스</div>
+    <div id="fi">픽스드 박스</div>
+</body>
+</body>
+</html>
