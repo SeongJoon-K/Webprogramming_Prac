@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Noto+Sans+KR:wght@100;300;400;900&family=Noto+Serif+KR&display=swap');
+
+div {
+    font-family: 'Monoton', cursive;
+}
+article {
+    width: 200px;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    padding: 50px;
+    margin: 50px auto;
+}
+article svg {
+    width:100%;
+}
+article svg path {
+    fill:transparent;
+    stroke: red;
+    stroke-width: 1;
+}
+
+svg {
+    viewBox: 0 0 448 512;
+}
