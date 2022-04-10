@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            width: 20px;
+            height: 20px;
+        }
+    </style>
+</head>
+<body>
+    나라 : 
+    <input type="text" list="countries">
+    <datalist id="countries">
+        <option value="가나"></option>
+        <option value="스위스"></option>
+        <option value="브라질"></option>
+    </datalist>
+    <pre>
+        데이터리스트를 사용하기 위해서는 먼저 input 타입을 받고
+        데이터리스트 id를 input의 list속성과 일치시킨다.
+        데이터리스트는 또한 option 태그를 사용해 목록을 구성한다.
+    </pre>
+    <form>
+        짜장면<input type="checkbox" value="1">
+        짬뽕 <input type="checkbox" value="2">
+        탕수육 <input type="checkbox" value="3">
+    </form>
+    <select name="merge">
+        <option value="1">1번</option>
+        <option value="2" selected>2번</option>
+        <option value="3">3번</option>
+    </select>
+    <pre>
+        select와 같은 콤보박스에서는 tag안에 selected와 같은 속성을 넣어주면
+        새로고침하여도 선택된 것으로 나오게 된다.
+    </pre>
+</body>
+</html>
