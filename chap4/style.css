@@ -1,0 +1,52 @@
+* {
+    
+}
+
+p strong { 
+    /* 자손선택자 */
+}
+
+ul li:nth-of-type(1) {
+    border: 1px solid red;   
+}
+
+ul li:nth-of-type(2) {
+    border: 1px solid green;
+}
+ul li:nth-of-type(3) {
+    border: 1px solid rgb(240, 182, 75);
+}
+ul li:nth-of-type(4) {
+    border: 1px solid blue;
+}
+
+#james:active {
+    background-color: red;
+}
+#james:focus {
+    background-color: black;
+}
+.first::hover {
+    background-color: red;
+}
+.first::first-line {
+    background-color: aqua;
+}
+#jame:hover {
+    width: 50px;
+    height: 30px;
+    background-color: yellow;
+}
+a:link {
+    background-color: black;
+}
+
+a:visited {
+    background-color: black;
+}
+
+/*  li:nth-of-type(2n) 으로 하면 배수와 특정규칙으로 사용가능함
+그리고 nth-of-type(odd, even)하면 짝수 홀수를 선택해서 지정할 수 있음.
+가상선택자
+:hover 1px solid blue
+hover는 선택요소 위에 마우스 포인터 올렸을 때 스타일을 적용함 */

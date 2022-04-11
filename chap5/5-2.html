@@ -6,51 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        div { 
-            width: 100px;
-            height: 100px;
-        }
-        div:hover {
-            position: absolute;
-            right: 50px;
-            bottom: 50px;
-            background:green;
-        }
-        #de,#re,#ab,#fi,#fl {
+        div {
             display: inline-block;
-            width: 70px;
-            height: 70px;
-            background-color: green;
+            height: 50px;
+            width: 50px;
+            border: 1px solid lightblue;
+            text-align: center;
+            color: white;
+            background: red;
         }
-        #de {
-            position: static;
-            background-color: aqua;
+        #down:hover {
+            position:relative;
+            left: 20px;
+            bottom: 20px;
+            background: green;
         }
-        #re {
-            /* position: relative; */
-            background-color: red;
-
+        #up:hover {
+            position: relative;
+            right: 20px;
+            top: 20px;
+            background: green;
         }
-        #ab {
-            background-color: olive;
-        }
-        #fi {
-            position: fixed;
-            background-color: yellow;
-            right: 50px;
-           
-        }
-
     </style>
 </head>
 <body>
-    <h3>POTISION</h3>
-
-    <hr>
-    <div id="de">디폴트 박스</div>
-    <div id="re">릴러티브 박스</div>
-    <div id="ab">앱솔루트 박스</div>
-    <div id="fi">픽스드 박스</div>
-</body>
+    <div>T</div>
+    <div id="down">H</div>
+    <div>A</div>
+    <div>N</div>
+    <div id="up">K</div>
+    <div>S</div>
 </body>
 </html>
