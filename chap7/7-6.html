@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>despasito</h3>
+    <hr>
+    <p onmouseover = "document.body.style.color = 'brown'">tlqkfsha</p>
+    <script>
+        let x;
+        function f() {
+            let y;
+            x = 10;
+            y = 20;
+            z = 30;
+            if (y==20) {
+                let b = 40;
+                b++;
+                document.write("if 블록 내 블록변수 b = " + b + "<br>");
+            }
+            //여기선 블록 변수 b에 접근 불가능
+            //여기선 함수 f 안이라서 지역변수 x y z에 접근 가능함
+            document.write("함수 f() 내 지역변수 y="+y+"<br>");
+        }
+        f();
+        document.write("전역변수 x=" + x + " <br>");
+        document.write("전역변수 z= "+ z);
+        
+    </script>
+</body>
+</html>
