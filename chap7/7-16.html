@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let price = 0;
+        let city= prompt("무슨커피 드릴까용", "");
+        switch(city) {
+            case "Seoul":
+                document.write("서울");
+                price = 14400;
+                break;
+            case "Newyork":
+                document.write("뉴요ㄱ");
+                price = 214400;
+                break;
+            case "Paris":
+                document.write("파리");
+                price = 144321300;
+                break;
+        }
+        if (price != 0){
+            document.write(city+"왕복 항공료는"+price+"원입니다.");
+        }
+    </script>
+</body>
+</html>
