@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function pr(msg, arr) {
+            document.write(msg + arr.toString() + "<br>");
+        }
+    </script>
+</head>
+<body>
+    <h3>Array 객체의 메소드 활용</h3>
+    <hr>
+    <script>
+        let a = new Array("황", "김", "이");
+        let b = new Array("박");
+        let c;
+
+        pr("배열 a = ", a);
+        pr("배열 b = ", b);
+        document.write("<br>");
+
+        c= a.concat(b); // c는 a와 b를 연결한 새 배열임
+        pr("c = a.concat(b);일 때 c 배열은", c);
+        pr("c = a.concat(b);일 때 a 배열은", a);
+
+        c= a.join("##"); // c는 배열 a를 연결한 문자열
+        document.write(a[1]+"<br>");
+        pr("c = a.join()후 c =", c);
+        pr("c = a.join()후 a =", a);
+</script>
+</body>
+</html>
