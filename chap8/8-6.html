@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function change() {
+            let spanArray = document.getElementsByTagName("span");
+            for(let i = 0; i <spanArray.length; i++) {
+                var span = spanArray[i];
+                span.style.color = "orchid";
+                span.style.fontSize = "20px";
+            }
+        }
+    </script>
+</head>
+<body>
+    <h3>내가 좋아하는 ㄱㅇ</h3>
+    <button onclick="change()">눌러바</button>
+    <hr>
+    Lorem ipsum dolor sit amet <span>여기</span>consectetur adipisicing elit.
+     Natus obcaecati nulla unde optio consectetur perferendis 
+     perspiciatis<span>여기여기</span> velit veritatis amet itaque mollitia, 
+     ipsum recusandae beatae<span>durl여기</span> soluta earum magni, ipsa doloribus vero!
+    
+</body>
+</html>
