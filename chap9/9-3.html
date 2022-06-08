@@ -6,23 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-        let p;
+        let p ;
         function init() {
-            p = document.getElementByld("p");// l이 아니라 I임 ..
+            p = document.getElementById("p");
             p.addEventListener("mouseover", over);
             p.addEventListener("mouseout", out);
         }
         function over() {
-            p.style.backgroundColor="orchid";
+            p.style.backgroundColor = "orchid";
         }
         function out() {
-            p.style.backgroundColor="white";
+            p.style.backgroundColor = "white";    
         }
+
     </script>
 </head>
 <body onload="init()">
-    <h3>addEventListener를 활요ㅇ한 리스너 등록</h3>
-    <hr>
-    <p id="p">마우스 올리면 orchid</p>
+    <p id="p">마우스 올리면</p>
+    
 </body>
 </html>

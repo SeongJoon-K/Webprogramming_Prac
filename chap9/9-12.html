@@ -5,16 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script>
+        function hideMenu() {
+            alert("오른쪽 클릭<컨텍스트 메뉴> 금지");
+            return false;
+        }
+        document.oncontextmenu=hideMenu;
+    </script>
 </head>
 <body>
-    <p id="p">마우스 올려바</p>
-    <button onclick="f(event)">클릭 ㄱ</button>
-    <script>
-        function f(e) {
-            alert(e.type);
-        }
-        document.getElementById("p").onmouseup = f;
-    </script>
-    
+    <img src="puppy.png" alt="mm" width="300px">
 </body>
 </html>
